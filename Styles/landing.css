@@ -1,3 +1,7 @@
 .landing_page {
-  min-height: 768px;
+  display: flex;
+  margin-top: 65px;
+  min-height: 760px;
+  align-items: center;
+  justify-content: center;
 }

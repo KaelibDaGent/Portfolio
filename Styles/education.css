@@ -1,0 +1,8 @@
+.education_section {
+  display: flex;
+  flex-direction: column;
+  margin-top: 65px;
+  min-height: 760px;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,28 +1,41 @@
-.header {
+header {
   display: flex;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  margin: 4px;
+  padding: 6px;
+  filter: blur(1.5);
   flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.nav {
-  display: inherit;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
 
 .logo {
   display: inherit;
-  justify-content: center;
+  align-items: center;
 }
 
 .name_logo {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
-  display: inline;
+  margin: 4px;
+  padding: 4px;
+  cursor: pointer;
 }
 
-.link {
-  display: inline;
+.quick_links {
+  display: inherit;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 12px;
+}
+
+.quick_links p a {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  margin: 4px;
+  padding: 6px;
 }

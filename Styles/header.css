@@ -6,7 +6,6 @@ header {
   left: 0;
   margin: 4px;
   padding: 6px;
-  backdrop-filter: blur(5px);
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -21,8 +20,10 @@ header {
   font-size: 26px;
   font-weight: bold;
   margin: 4px;
-  padding: 4px;
+  padding: 8px;
   cursor: pointer;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
 }
 
 .quick_links {
@@ -30,6 +31,9 @@ header {
   align-items: center;
   flex-direction: row;
   column-gap: 12px;
+  backdrop-filter: blur(5px);
+  padding: 12px 20px;
+  border-radius: 20px;
 }
 
 .quick_links p a {

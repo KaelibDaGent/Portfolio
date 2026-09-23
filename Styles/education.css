@@ -6,3 +6,25 @@
   align-items: center;
   justify-content: center;
 }
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.education_card {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  padding: 16px 20px;
+  margin: 18px;
+  border: 1px black solid;
+  border-radius: 8px;
+}
+
+.institution_name {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

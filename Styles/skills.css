@@ -36,6 +36,9 @@
   justify-content: center;
   width: 100px; /* Gives "JavaScript" enough room so it doesn't break layout */
   text-align: center;
+  box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
+  padding: 8px;
 }
 
 .skill_image {

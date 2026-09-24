@@ -1,7 +1,7 @@
 .contact_section {
   display: flex;
   flex-direction: column;
-  min-height: 768px;
+  min-height: 700px;
 }
 
 .socials {
@@ -21,7 +21,68 @@
   object-fit: cover;
 }
 
+.contact_content {
+  display: flex;
+  flex-direction: row;
+}
 
+.contact_me {
+  display: flex;
+  border: 1px black solid;
+  height: 700px;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link {
+  height: 30px;
+  width: 30px;
+}
+
+.linkedin {
+  height: 100%;
+  width: 100%;
+}
+
+.form_section {
+  display: flex;
+  flex-direction: column;
+  border: 1px black solid;
+  height: 700px;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* Clean spacing between cards */
+  width: 100%;
+  max-width: 500px;
+  border: 1px black solid;
+  
+  /* BULLETPROOF VERTICAL CENTERING TRICK: */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.form_title,
+.form_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.names_email,
+.message_section {
+  display: flex;
+  flex-direction: column;
+}
 
 footer {
   display: flex;

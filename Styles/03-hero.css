@@ -1,0 +1,37 @@
+/* ============================================================
+   3. HERO / LANDING
+   Split layout, Mac editor window, buttons, sticker and background decorations.
+   HTML: .hero > .deco elements + .hero-inner
+   ============================================================ */
+.hero{position:relative;overflow:hidden;min-height:calc(100vh - 110px);display:flex;align-items:center;padding:4rem 1.25rem 5rem}
+.hero-inner{position:relative;z-index:2;width:100%;max-width:1100px;margin:0 auto;display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center}
+.hero h1{display:flex;flex-direction:column;align-items:flex-start}
+.hero h1 .d{font-size:clamp(4rem,10.5vw,8rem)}
+.hero h1 .w{font-weight:800;font-size:clamp(2.4rem,7vw,4.8rem);line-height:1;color:var(--orange);text-transform:uppercase}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem}
+.art .btns{position:relative;z-index:2;justify-content:center;margin-top:2.2rem}
+.role{background:var(--green);color:#000;font-size:.95rem;padding:.35rem .9rem;margin-top:1.2rem}
+.btn{display:inline-block;padding:.7rem 1.5rem;border-radius:999px;font-weight:800;font-size:1rem;border:3px solid #fff;background:var(--bg);color:#fff;box-shadow:4px 4px 0 var(--orange);transition:transform .12s,box-shadow .12s}
+.btn.solid{background:#fff;color:#000}
+.btn:hover{transform:translate(3px,3px);box-shadow:1px 1px 0 var(--orange)}
+.art{position:relative;padding:1.5rem 0 2rem}
+.art::before{content:"";position:absolute;inset:-8% -6% -4% 12%;border-radius:50%;border:1.5px solid rgba(255,255,255,.3);z-index:0}
+.sticker{position:absolute;z-index:3;right:-6px;top:-4px;transform:rotate(6deg);background:var(--yellow);color:#000;border-radius:14px;padding:.4rem .9rem;font-weight:800;box-shadow:4px 4px 0 #fff}
+
+/* mac window (kept from original) */
+.mac-window{position:relative;z-index:2;transform:rotate(-2.5deg);background:#000;border-radius:10px;overflow:hidden;box-shadow:10px 10px 0 var(--orange);border:1px solid #444;text-align:left}
+.mac-titlebar{display:flex;align-items:center;gap:8px;padding:10px 14px;background:#1c1c1e;border-bottom:1px solid #333}
+.dot{width:12px;height:12px;border-radius:50%;display:inline-block}
+.dot.red{background:#ff5f56}.dot.yellow{background:#ffbd2e}.dot.green{background:#27c93f}
+.filename{margin-left:12px;font-size:.8rem;color:#8e8e93;font-family:"SF Mono",Menlo,Consolas,monospace}
+.code{margin:0;padding:18px 20px;background:#000;color:#d4d4d4;font-family:"Fira Code","SF Mono",Menlo,Consolas,monospace;font-size:.9rem;line-height:1.6;overflow-x:auto}
+.keyword{color:#569cd6}.variable{color:#4fc1ff}.bracket{color:#ffd700}.property{color:#9cdcfe}
+.value.string{color:#ce9178}.value.number{color:#b5cea8}
+
+.deco{position:absolute;z-index:1;pointer-events:none}
+.paper{right:0;bottom:0;width:64%;height:78%;background:var(--grain),radial-gradient(ellipse at 30% 30%,#2a2826,#151413 70%);
+  clip-path:polygon(30% 100%,42% 78%,47% 81%,60% 58%,66% 61%,80% 38%,86% 41%,100% 22%,100% 100%)}
+.globe{top:7%;left:4%;width:80px}
+.spark{top:10%;right:6%;width:64px;transform:rotate(12deg)}
+.squig-g{bottom:9%;left:14%;width:170px}
+.checker{left:0;bottom:0;width:130px;height:32px;background:repeating-conic-gradient(var(--green) 0 25%,transparent 0 50%) 0 0/32px 32px;z-index:3}

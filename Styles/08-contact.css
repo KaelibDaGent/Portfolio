@@ -1,0 +1,16 @@
+/* ============================================================
+   8. CONTACT (links + form)
+   HTML: <section id="contact">
+   ============================================================ */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:2.5rem;align-items:start}
+.contact h3{font-family:var(--display);font-weight:400;font-size:2.4rem;line-height:1;text-transform:uppercase;margin-bottom:1rem}
+.socials{display:flex;flex-direction:column;gap:.9rem;align-items:flex-start}
+.social{padding:.7rem 1.4rem;border-radius:999px;font-weight:800;color:#000;transition:transform .15s}
+.social:hover{transform:rotate(-2deg) scale(1.04)}
+form{border:1px solid var(--line);border-radius:22px;padding:1.6rem;display:grid;gap:1rem;background:var(--bg)}
+.pair{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+label{display:block;font-size:.85rem;font-weight:600;margin-bottom:.3rem}
+input,textarea{width:100%;background:#000;color:#fff;border:1px solid var(--line);border-radius:10px;padding:.7rem .8rem;font:inherit}
+textarea{min-height:120px;resize:vertical}
+button{font:inherit;font-weight:800;background:var(--orange);color:#000;border:0;border-radius:999px;padding:.8rem 1.6rem;cursor:pointer;justify-self:start;transition:transform .15s}
+button:hover{transform:translateY(-3px)}

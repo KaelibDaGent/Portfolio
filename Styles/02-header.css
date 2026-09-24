@@ -1,0 +1,16 @@
+/* ============================================================
+   2. HEADER
+   Sticky nav + scrolling ticker (marquee). HTML: <header> > <nav> and .ticker
+   ============================================================ */
+header{position:sticky;top:0;z-index:50;background:rgba(15,14,13,.92);backdrop-filter:blur(8px)}
+nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:.75rem 1.5rem;padding:.9rem 1.5rem}
+.logo{font-weight:800;font-size:1.5rem}
+nav ul{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;list-style:none;font-size:.85rem}
+nav ul a{padding:.2rem .5rem;border-radius:4px}
+nav ul a:hover{background:var(--green);color:#000}
+.ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.track{display:flex;width:max-content;animation:slide 32s linear infinite}
+.grp{display:flex;flex-shrink:0}
+.grp span{padding:.35rem 1.6rem;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.grp span:nth-child(even){font-weight:800}
+@keyframes slide{to{transform:translateX(-50%)}}

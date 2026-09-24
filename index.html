@@ -1,475 +1,310 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Katleho Khosi | Portfolio</title>
-    <!--Css links and fav icon image link Start-->
-    <link rel="stylesheet" type="" href="Styles/general.css">
-    <link rel="favicon" type="image/icon" href="icons/circled_k.png">
-    <link rel="stylesheet" type="text/css" href="Styles/header.css">
-    <link rel="stylesheet" type="text/css" href="Styles/landing.css">
-    <link rel="stylesheet" type="text/css" href="Styles/education.css">
-    <link rel="stylesheet" type="text/css" href="Styles/projects.css">
-    <link rel="stylesheet" type="text/css" href="Styles/skills.css">
-    <link rel="stylesheet" type="text/css" href="Styles/about.css">
-    <link rel="stylesheet" type="text/css" href="Styles/contact.css">
-    <!--Css links and fav icon image link End-->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Katleho Khosi | Portfolio</title>
 
-    <!--Fonts Start Here-->
-    <!--Roboto font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <!-- Fav icon -->
+  <link rel="icon" type="image/png" href="icons/circled_k.png">
 
-    <!--Garamond font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
-    <!--Fonts End Here-->
-  </head>
-  <body>
-    <header>
-        <div class="logo">
-          <p class="name_logo">
-            K.K
-          </p>
-        </div>
+  <!-- Fonts: Bebas Neue (headings) + Syne (everything else) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Syne:wght@400;600;800&display=swap" rel="stylesheet">
 
-        <div class="quick_links">
-          <p class="link">
-            <a href="#education">Education</a>
-          </p>
+  <!-- CSS parts (keep 01-global first) -->
+  <link rel="stylesheet" href="Styles/01-global.css">
+  <link rel="stylesheet" href="Styles/02-header.css">
+  <link rel="stylesheet" href="Styles/03-hero.css">
+  <link rel="stylesheet" href="Styles/04-education.css">
+  <link rel="stylesheet" href="Styles/05-projects.css">
+  <link rel="stylesheet" href="Styles/06-skills.css">
+  <link rel="stylesheet" href="Styles/07-about.css">
+  <link rel="stylesheet" href="Styles/08-contact.css">
+  <link rel="stylesheet" href="Styles/09-footer.css">
+</head>
+<body>
 
-          <p class="link">
-            <a href="#project">Projects</a>
-          </p>
+  <!-- Hidden SVG: holographic gradient + sparkle used by the hero stickers -->
+  <svg class="def" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="holo" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#ffe08a"/><stop offset=".35" stop-color="#ff9ec4"/>
+        <stop offset=".65" stop-color="#9aa8ff"/><stop offset="1" stop-color="#8ffcf0"/>
+      </linearGradient>
+      <symbol id="i-spark" viewBox="0 0 100 100"><path d="M50 4C55 35 65 45 96 50 65 55 55 65 50 96 45 65 35 55 4 50 35 45 45 35 50 4Z" fill="url(#holo)" stroke="#0f0e0d" stroke-width="3"/></symbol>
+      <symbol id="i-star" viewBox="0 0 100 100"><path d="M50 6 62 38 96 38 68 58 79 92 50 71 21 92 32 58 4 38 38 38Z" fill="url(#holo)" stroke="#0f0e0d" stroke-width="3" stroke-linejoin="round"/></symbol>
+      <symbol id="i-eye" viewBox="0 0 100 100"><path d="M4 50Q50 8 96 50 50 92 4 50Z" fill="url(#holo)" stroke="#0f0e0d" stroke-width="3"/><circle cx="50" cy="50" r="16" fill="#fff" stroke="#0f0e0d" stroke-width="4"/><circle cx="50" cy="50" r="6" fill="#0f0e0d"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 100 100"><circle cx="50" cy="50" r="46" fill="url(#holo)"/><path d="M34 34 66 34M34 34 34 66M34 34 68 68" stroke="#0f0e0d" stroke-width="6" stroke-linecap="round" fill="none"/></symbol>
+    </defs>
+  </svg>
 
-          <p class="link">
-            <a href="#skill">Skills</a>
-          </p>
+  <header>
+    <nav aria-label="Main">
+      <a class="logo" href="#top">K.K</a>
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#skill">Skills</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact me</a></li>
+      </ul>
+    </nav>
 
-          <p class="link">
-            <a href="#about">About</a>
-          </p>
-
-          <p class="link">
-            <a href="#contact">Contact me</a>
-          </p>
-        </div>
-    </header>
-
-    <main>
-      <div class="landing_page">
-        <pre class="">
-          <span class="property">const employee =  </span> {
-            <span class="property">Name: </span> <span class="value">"Katleho Khosi",</span>
-            <span class="property">Occupation: </span> <span class="value">"Junior Software Engineer",</span>
-            <span class="property">Qualification: </span> <span class="value">"BSc Information Technology",</span>
-            <span class="property">Years_experience: </span> <span class="value">1</span>
-          };
-        </pre>
+    <!-- Scrolling ticker: edit the words in BOTH .grp groups so they stay identical -->
+    <div class="ticker" aria-hidden="true">
+      <div class="track">
+        <div class="grp"><span>Portfolio</span><span>Junior software engineer</span><span>Portfolio</span><span>Open to internships</span><span>Portfolio</span><span>Always learning</span></div>
+        <div class="grp"><span>Portfolio</span><span>Junior software engineer</span><span>Portfolio</span><span>Open to internships</span><span>Portfolio</span><span>Always learning</span></div>
       </div>
+    </div>
+  </header>
 
-      <div class="education_section" id="education">
-        <div class="section_title">
-          <p class="title">
-            Education and Experience
-          </p>
-        </div> 
+  <main id="top">
 
-        <div class="eduacation_experience">
-          <div class="education_card">
-            <div class="education_icon">
-              <img src="" class="icon">
+    <!-- Landing / hero -->
+    <div class="hero">
+      <div class="deco paper" aria-hidden="true"></div>
+      <svg class="deco globe" viewBox="0 0 100 100" aria-hidden="true"><circle cx="50" cy="50" r="46" fill="url(#holo)"/><g fill="none" stroke="#0f0e0d" stroke-width="3"><ellipse cx="50" cy="50" rx="20" ry="46"/><ellipse cx="50" cy="50" rx="46" ry="18"/><path d="M50 4V96M4 50H96"/></g></svg>
+      <svg class="deco spark" viewBox="0 0 100 100" aria-hidden="true"><use href="#i-spark"/></svg>
+      <svg class="deco squig-g" viewBox="0 0 180 60" aria-hidden="true"><path d="M2 40C30-10 60 90 90 30S150 10 178 50" stroke="#1aff7a" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      <div class="deco checker" aria-hidden="true"></div>
+
+      <div class="hero-inner">
+        <div>
+          <h1><span class="d">Hello, I'm</span><span class="w">Katleho</span></h1>
+          <span class="chip role">Junior Software Engineer</span>
+        </div>
+
+        <div class="art">
+          <span class="sticker">Open to internships</span>
+
+          <div class="mac-window">
+            <div class="mac-titlebar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="filename">employee.js</span>
             </div>
-            <div class="education_info">
-              <div class="institution_name">
-                <div class="name">
-                  <h2>O.R Tambo Secondary School</h2>
-                </div>
-
-                <div class="year_completion">
-                  <p>
-                    2021
-                  </p>
-                </div>
-              </div>
-              <div class="institution_details">
-                <ul>
-                  <li>National Senior Certificate - Bachelors</li>
-                  <li>Math and Science</li>
-                </ul>
-              </div>
-            </div>
+<pre class="code"><span class="keyword">const</span> <span class="variable">employee</span> = <span class="bracket">{</span>
+  <span class="property">Name</span>: <span class="value string">"Katleho Khosi"</span>,
+  <span class="property">Occupation</span>: <span class="value string">"Junior Software Engineer"</span>,
+  <span class="property">Qualification</span>: <span class="value string">"BSc Information Technology"</span>,
+  <span class="property">Years_experience</span>: <span class="value number">1</span>
+<span class="bracket">}</span>;
+</pre>
           </div>
 
-          <div class="education_card">
-            <div class="education_icon">
-              <img src="" class="icon">
-            </div>
-            <div class="education_info">
-              <div class="institution_name">
-                <div class="name">
-                  <h2>North West University</h2>
-                </div>
-
-                <div class="year_completion">
-                  <p>
-                    Present
-                  </p>
-                </div>
-              </div>
-              <div class="institution_details">
-                <ul>
-                  <li>BSc Information Technology</li>
-                </ul>
-              </div>
-            </div>
+          <div class="btns">
+            <a class="btn solid" href="#project">See my projects</a>
+            <a class="btn" href="#contact">Let's talk</a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="projects_section" id="project">
-        <div class="section_title">
-          <p class="title">
-            Projects
-          </p>
-        </div> 
-        <div class="projects">
-          <div class="project_card">
-            <div class="project_image">
-              <img src="Images/youtube-clone.png" alt="youtube_clone_image" class="p_image">
-            </div>
-
-            <div class="project_info">
-              <div class="project_name">
-                <p class="p_name">
-                  Youtube Clone
-                </p>
-              </div>
-              <div class="project_description">
-                <p class="p_description">
-                  This project was inspired by Youtube's UI and was a great learning curve for HTML/CSS.
-                </p>
-              </div>
-              <div class="project_languages">
-                <P class="p_language">
-                  HTML
-                </P>
-                <P class="p_language">
-                  CSS
-                </P>
-              </div>
-            </div>
-
-            <div class="github_live_link">
-              <a href="https://github.com/KaelibDaGent/YouTube-Clone" class="github_repo">
-                <img src="icons/github.png" alt="github_repo_link" class="github_icon">
-              </a>
-
-              <a href="https://kaelibdagent.github.io/YouTube-Clone/" class="live_link">
-                <img src="icons/links.png" alt="live_link" class="live_link_icon">
-              </a>
-            </div>
-        </div>
-
-        <div class="project_card">
-          <div class="project_image">
-            <img src="Images/rock-paper-scissors.png" alt="rockpaperscissor_image" class="p_image">
-          </div>
-
-          <div class="project_info">
-            <div class="project_name">
-              <p class="p_name">
-                Rock Paper Scissors
-              </p>
-            </div>
-            <div class="project_description">
-              <p class="p_description">
-                This project was inspired by the game rock paper scissors and was a fun project created off of boredom.
-              </p>
-            </div>
-            <div class="project_languages">
-              <P class="p_language">
-                HTML
-              </P>
-              <P class="p_language">
-                CSS
-              </P>
-              <p class="p_language">
-                JS
-              </p>
-            </div>
-          </div>
-
-          <div class="github_live_link">
-              <a href="https://github.com/KaelibDaGent/Rock-Paper-Scissors-Game" class="github_repo">
-                <img src="icons/github.png" alt="github_repo_link" class="github_icon">
-              </a>
-
-              <a href="https://kaelibdagent.github.io/Rock-Paper-Scissors-Game/" class="live_link">
-                <img src="icons/links.png" alt="live_link" class="live_link_icon">
-              </a>
-            </div>
-        </div>
-
-        <div class="project_card">
-          <div class="project_image">
-            <img src="Images/portfolio.png" alt="portfolio_image" class="p_image">
-          </div>
-
-          <div class="project_info">
-            <div class="project_name">
-              <p class="p_name">
-                Portfolio
-              </p>
-            </div>
-            <div class="project_description">
-              <p class="p_description">
-                This is my portfolio project I created after learning about responsive design and had solid understanding of HTML/CSS.
-              </p>
-            </div>
-            <div class="project_languages">
-              <P class="p_language">
-                HTML
-              </P>
-              <P class="p_language">
-                CSS
-              </P>
-            </div>
-          </div>
-
-          <div class="github_live_link">
-              <a href="https://github.com/KaelibDaGent/Portfolio" class="github_repo">
-                <img src="icons/github.png" alt="github_repo_link" class="github_icon">
-              </a>
-
-              <a href="https://katlehokhosi.netlify.app/" class="live_link" >
-                <img src="icons/links.png" alt="live_link" class="live_link_icon">
-              </a>
-            </div>
-        </div>
-
-        <div class="project_card">
-          <div class="project_image">
-            <img src="Images/todolist.png" alt="todolist_image" class="p_image">
-          </div>
-
-          <div class="project_info">
-            <div class="project_name">
-              <p class="p_name">
-                ToDo List
-              </p>
-            </div>
-            <div class="project_description">
-              <p class="p_description">
-                This is my ToDo List project that I created to better understand JS.
-              </p>
-            </div>
-            <div class="project_languages">
-              <p class="p_language">
-                HTML
-              </p>
-              <P class="p_language">
-                CSS
-              </P>
-              <p class="p_language">
-                JS
-              </p>
-            </div>
-          </div>
-
-          <div class="github_live_link">
-              <a href="#" class="github_repo">
-                <img src="icons/github.png" alt="github_repo_link" class="github_icon">
-              </a>
-
-              <a href="#" class="live_link">
-                <img src="icons/links.png" alt="live_link" class="live_link_icon">
-              </a>
-            </div>
-        </div>
-        </div>
+    <!-- Education -->
+    <section id="education">
+      <div class="torn" aria-hidden="true"></div>
+      <div class="sec-head">
+        <h2>Education and Experience</h2>
+        <span class="chip">Where I've learned</span>
       </div>
 
-      <div class="skills_section" id="skill">
-        <div class="section_title">
-          <p class="title">
-            My Skills
-          </p>
-        </div> 
-
-        <div class="skills"> 
-          <div class="skills_card">
-            <div class="skill_image">
-              <img src="icons/html.png" alt="html_icon/image" class="s_image">
-            </div>
-            <div class="skill_details">
-              <div class="skill_name">
-                <P class="s_name">
-                  HTML
-                </P>
-              </div>
-            </div>
+      <div class="edu-grid">
+        <article class="edu">
+          <div class="row">
+            <h3>O.R Tambo Secondary School</h3>
+            <span class="chip">2021</span>
           </div>
+          <ul>
+            <li>National Senior Certificate - Bachelors</li>
+            <li>Math and Science</li>
+          </ul>
+        </article>
 
-          <div class="skills_card">
-            <div class="skill_image">
-              <img src="icons/css-file.png" alt="css_icon/image" class="s_image">
-            </div>
-            <div class="skill_details">
-              <div class="skill_name">
-                <P class="s_name">
-                  CSS
-                </P>
-              </div>
-            </div>
+        <article class="edu now">
+          <div class="row">
+            <h3>North West University</h3>
+            <span class="chip">Present</span>
           </div>
+          <ul>
+            <li>BSc Information Technology</li>
+          </ul>
+        </article>
+      </div>
+    </section>
 
-          <div class="skills_card">
-            <div class="skill_image">
-              <img src="icons/java-script.png" alt="js_icon/image" class="s_image">
-            </div>
-            <div class="skill_details">
-              <div class="skill_name">
-                <P class="s_name">
-                  JavaScript
-                </P>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills_card">
-            <div class="skill_image">
-              <img src="icons/language.png" alt="cs_icon/image" class="s_image">
-            </div>
-            <div class="skill_details">
-              <div class="skill_name">
-                <P class="s_name">
-                  C#
-                </P>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills_card">
-            <div class="skill_image">
-              <img src="icons/java-logo.png" alt="java_icon/image" class="s_image">
-            </div>
-            <div class="skill_details">
-              <div class="skill_name">
-                <P class="s_name">
-                  Java
-                </P>
-              </div>
-            </div>
-          </div>
-
-          <div class="skills_card">
-            <div class="skill_image">
-              <img src="icons/python.png" alt="python_icon/image" class="s_image">
-            </div>
-            <div class="skill_details">
-              <div class="skill_name">
-                <P class="s_name">
-                  Python
-                </P>
-              </div>
-            </div>
-          </div>
-        </div>
+    <!-- Projects -->
+    <section id="project">
+      <div class="sec-head">
+        <h2>Projects</h2>
+        <span class="chip">Things I've built</span>
       </div>
 
-      <div class="about_section" id="about">
-        <div class="section_title">
-          <p class="title">
-            About Me
-          </p>
-        </div>
-
-        <div class="about_me">
-          <p>
-            I'm a software engineer with a passion for building products end to end. I enjoy the full stack — designing a data model, building the API on top of it, and polishing the interface people actually use.
-            Outside of work, I contribute to open source and enjoy mentoring junior developers.
-          </p>
-        </div>
-      </div>
-
-      <div class="contact_section" id="contact">
-        <div class="section_title">
-          <p class="title">
-            Let's Link Up!
-          </p>
-        </div>
-
-        <div class="contact_content">
-          <div class="contact_me">
-            <div class="socials">
-              <div class="social-link">
-                <a href="https://www.linkedin.com/in/katleho-khosi-77511425b/">
-                  <img src="icons/linkedin.png" class="linkedin">
-                </a>
-              </div>
-
-              <div class="social-link">
-                <a href="mailto:katleho_khosi@outlook.com">
-                  <img src="icons/message.png" class="linkedin">
-                </a>
-              </div>
-
-              <div class="social-link">
-                  <a href="https://www.tiktok.com/@kaelib_da_gent2?lang=en">
-                    <img src="icons/tiktok.png" class="linkedin">
-                  </a>
-              </div>
+      <div class="proj-grid">
+        <article class="proj">
+          <div class="thumb">
+            <img src="Images/youtube-clone.png" alt="Youtube Clone screenshot">
+          </div>
+          <div class="proj-body">
+            <h3>Youtube Clone</h3>
+            <p>This project was inspired by Youtube's UI and was a great learning curve for HTML/CSS.</p>
+            <div class="tags">
+              <span class="chip h">HTML</span>
+              <span class="chip c">CSS</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/KaelibDaGent/YouTube-Clone">GitHub</a>
+              <a href="https://kaelibdagent.github.io/YouTube-Clone/">Live demo</a>
             </div>
           </div>
+        </article>
 
-          <div class="form_section">
-            <form class="getInTouch_form">
-              <div class="form_title">
-                <h2>
-                  Let's Chat
-                </h2>
-              </div>
-
-              <div class="form_content">
-                <div class="names_email">
-                  <label for="username" class="username">
-                    Username:
-                  </label>
-                  <input type="text" class="username_input">
-
-                  <label for="user_email" class="user_email">
-                    Email:
-                  </label>
-                  <input class="user_email_input" type="email">
-                </div>
-
-                <div class="message_section">
-                  <label for="message_input" class="user_message">
-                    Message:
-                  </label>
-                  <input class="message_input" type="text">
-                </div>
-              </div>
-
-              <div class="form_btn">
-                <button class="submit_btn">
-                  Submit
-                </button>
-              </div>
-            </form>
+        <article class="proj">
+          <div class="thumb">
+            <img src="Images/rock-paper-scissors.png" alt="Rock Paper Scissors screenshot">
           </div>
+          <div class="proj-body">
+            <h3>Rock Paper Scissors</h3>
+            <p>This project was inspired by the game rock paper scissors and was a fun project created off of boredom.</p>
+            <div class="tags">
+              <span class="chip h">HTML</span>
+              <span class="chip c">CSS</span>
+              <span class="chip j">JS</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/KaelibDaGent/Rock-Paper-Scissors-Game">GitHub</a>
+              <a href="https://kaelibdagent.github.io/Rock-Paper-Scissors-Game/">Live demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj">
+          <div class="thumb">
+            <img src="Images/portfolio.png" alt="Portfolio screenshot">
+          </div>
+          <div class="proj-body">
+            <h3>Portfolio</h3>
+            <p>This is my portfolio project I created after learning about responsive design and had solid understanding of HTML/CSS.</p>
+            <div class="tags">
+              <span class="chip h">HTML</span>
+              <span class="chip c">CSS</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/KaelibDaGent/Portfolio">GitHub</a>
+              <a href="https://katlehokhosi.netlify.app/">Live demo</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj">
+          <div class="thumb">
+            <img src="Images/todolist.png" alt="ToDo List screenshot">
+          </div>
+          <div class="proj-body">
+            <h3>ToDo List</h3>
+            <p>This is my ToDo List project that I created to better understand JS.</p>
+            <div class="tags">
+              <span class="chip h">HTML</span>
+              <span class="chip c">CSS</span>
+              <span class="chip j">JS</span>
+            </div>
+            <div class="links">
+              <a href="#">GitHub</a>
+              <a href="#">Live demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skill">
+      <div class="sec-head">
+        <h2>My Skills</h2>
+        <span class="chip">What I work with</span>
+      </div>
+
+      <div class="skill-grid">
+        <div class="skill"><svg aria-hidden="true"><use href="#i-spark"/></svg><span>HTML</span></div>
+        <div class="skill"><svg aria-hidden="true"><use href="#i-star"/></svg><span>CSS</span></div>
+        <div class="skill"><svg aria-hidden="true"><use href="#i-eye"/></svg><span>JavaScript</span></div>
+        <div class="skill"><svg aria-hidden="true"><use href="#i-arrow"/></svg><span>C#</span></div>
+        <div class="skill"><svg aria-hidden="true"><use href="#i-spark"/></svg><span>Java</span></div>
+        <div class="skill"><svg aria-hidden="true"><use href="#i-star"/></svg><span>Python</span></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="sec-head">
+        <h2>About Me</h2>
+        <span class="chip">The short version</span>
+      </div>
+
+      <div class="about">
+        <p>
+          I'm a software engineer with a passion for building products end to end. I enjoy the full stack — designing a data model, building the API on top of it, and polishing the interface people actually use.
+          Outside of work, I contribute to open source and enjoy mentoring junior developers.
+        </p>
+        <div class="facts">
+          <div class="fact"><b>4th</b>year BSc IT</div>
+          <div class="fact"><b>6</b>languages learned</div>
+          <div class="fact"><b>4</b>projects built</div>
         </div>
       </div>
-    </main>
+    </section>
 
-    <footer>
-      <p>Copyright by Katleho Khosi - BSc Information Technology Student - 2026 -
-        <a href="https://www.flaticon.com/free-icons/programming-languages" title="icons">Programming languages icons created by Magnific - Flaticon</a>
-      </p>
-    </footer>
-  </body>
+    <!-- Contact -->
+    <section id="contact">
+      <div class="sec-head">
+        <h2>Let's Link Up!</h2>
+        <span class="chip">Say hello</span>
+      </div>
+
+      <div class="contact">
+        <div>
+          <h3>Find me online</h3>
+          <div class="socials">
+            <a class="social" style="background:var(--blue);color:#fff" href="https://www.linkedin.com/in/katleho-khosi-77511425b/">LinkedIn</a>
+            <a class="social" style="background:var(--green)" href="mailto:katleho_khosi@outlook.com">Email me</a>
+            <a class="social" style="background:#fff" href="https://www.tiktok.com/@kaelib_da_gent2?lang=en">TikTok</a>
+          </div>
+        </div>
+
+        <form action="#" method="post">
+          <h3>Let's Chat</h3>
+          <div class="pair">
+            <div>
+              <label for="name">Name</label>
+              <input id="name" name="name" type="text" autocomplete="given-name" required>
+            </div>
+            <div>
+              <label for="surname">Surname</label>
+              <input id="surname" name="surname" type="text" autocomplete="family-name" required>
+            </div>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div>
+            <label for="msg">Message</label>
+            <textarea id="msg" name="message" required></textarea>
+          </div>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    Copyright by Katleho Khosi - BSc Information Technology Student - 2026 -
+    <a href="https://www.flaticon.com/free-icons/programming-languages" title="icons">Programming languages icons created by Magnific - Flaticon</a>
+  </footer>
+
+</body>
 </html>

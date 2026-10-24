@@ -7,7 +7,7 @@ nav{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between
 .logo{font-weight:800;font-size:1.5rem}
 nav ul{display:flex;flex-wrap:wrap;gap:.4rem 1.4rem;list-style:none;font-size:.85rem}
 nav ul a{padding:.2rem .5rem;border-radius:4px}
-nav ul a:hover{background:var(--green);color:#000}
+nav ul a:hover{background:var(--green);color:#000; transition: 0.4s;}
 .ticker{overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .track{display:flex;width:max-content;animation:slide 32s linear infinite}
 .grp{display:flex;flex-shrink:0}
